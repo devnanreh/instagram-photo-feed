@@ -23,109 +23,108 @@
     ></script>
   </head>
 
-  <body>
+  <body class="bg-light">
     <div class="container-fluid">
       <!-- NAV BAR -->
-      <div>
-        <nav class="navbar bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img
-                src="https://cdn.worldvectorlogo.com/logos/instagram-circle.svg"
-                width="40"
-                height="50"
-                alt="" />
-              <img
-                class="navbar-brand"
-                src="https://cdn.worldvectorlogo.com/logos/instagram-2.svg"
-                alt=""
-                width="100"
-                height="50"
-            /></a>
 
-            <!-- dropdown settings -->
-            <div class="dropdown">
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Create a new post
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <!--    Text area   -->
-                    <div class="modal-body p-2">
-                      <div class="form-floating">
-                        <textarea
-                          class="form-control"
-                          placeholder="Leave a comment here"
-                          id="floatingTextarea2"
-                          style="height: 100px"
-                        ></textarea>
-                        <label for="floatingTextarea2">Comments</label>
-                      </div>
-                      <!--    Buttons    -->
-                      <button type="button" class="btn btn-light m-1">
-                        <i class="bi bi-camera"></i>
-                      </button>
-                      <button type="button" class="btn btn-light m-1">
-                        <i class="bi bi-geo-alt"></i>
-                      </button>
+      <nav class="navbar bg-white border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://cdn.worldvectorlogo.com/logos/instagram-circle.svg"
+              width="40"
+              height="50"
+              alt="logo" />
+            <img
+              class="navbar-brand"
+              src="https://cdn.worldvectorlogo.com/logos/instagram-2.svg"
+              alt="logo"
+              width="100"
+              height="50"
+          /></a>
+
+          <!--    dropdown   -->
+          <div class="dropdown">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!--    Text area   -->
+                  <div class="modal-body p-2">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea2"
+                        style="height: 100px"
+                      ></textarea>
+                      <label for="floatingTextarea2">Comments</label>
                     </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Cancel
-                      </button>
-                      <button type="button" class="btn btn-success">
-                        Publish
-                      </button>
-                    </div>
+                    <!--    Buttons    -->
+                    <button type="button" class="btn btn-light m-1">
+                      <i class="bi bi-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light m-1">
+                      <i class="bi bi-geo-alt"></i>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Publish
+                    </button>
                   </div>
                 </div>
               </div>
-              <a
-                class="btn dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                ><i class="fa-solid fa-gear"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Log out</a></li>
-              </ul>
             </div>
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-gear"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
     <!--    Nav Tabs buttons    -->
     <div>
       <div>
         <ul
-          class="nav justify-content-center mb-3"
+          class="nav justify-content-center mb-1 mt-1"
           id="pills-tab"
           role="tablist"
         >
@@ -159,7 +158,6 @@
           </li>
         </ul>
       </div>
-
       <!--    Tab content's   -->
       <div class="tab-content" id="pills-tabContent">
         <div
@@ -170,51 +168,57 @@
         >
           <div class="text-center">
             <div class="">
-              <img
-                src="https://picsum.photos/id/1/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/11/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/111/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/22/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/222/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/445/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/48/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/444/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
-              <img
-                src="https://picsum.photos/id/88/800/600"
-                class="img-thumbnail mx-auto d-inline-block"
-                alt=""
-              />
+              <div class="">
+                <img
+                  src="https://picsum.photos/id/1/600/600"
+                  class="img-thumbnail img-fluid mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/11/600/600"
+                  class="img-thumbnail img-fluid mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/111/600/600"
+                  class="img-thumbnail img-fluid mx-auto d-inline-block"
+                  alt="imagen"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://picsum.photos/id/22/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/222/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/445/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://picsum.photos/id/48/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/444/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+                <img
+                  src="https://picsum.photos/id/88/600/600"
+                  class="img-thumbnail mx-auto d-inline-block"
+                  alt="imagen"
+                />
+              </div>
             </div>
           </div>
         </div>
